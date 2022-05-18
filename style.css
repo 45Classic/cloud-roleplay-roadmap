@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'pop';
+    src: url(assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'pop-m';
+    src: url(assets/fonts/Poppins-ExtraLight.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'pop';
+    color: white;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+:root {
+    --main-color: rgb(0, 111, 223);
+    --main-darkcolor: rgb(0, 32, 63);
+    --background-image: url(assets/img/background.png);
+}
+
+::-webkit-scrollbar {
+    width: .2vw;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: .2vw;
+    background: gray;
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: .2vw;
+    transition: all 0.25s ease-in-out;
+}
+
+.all {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    overflow: auto;
+}
+
+.welcome-area {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(45deg, rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), var(--background-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(12, 12, 12);
+}
+
+.welcome-area > div {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    padding: 5%;
+    height: auto;
+    width: fit-content;
+    border-radius: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.welcome-area > div > h1 {
+    font-size: 2.2vw;
+    color: var(--main-color);
+}
+
+.welcome-area > div > p {
+    font-size: 1vw;
+}
+
+.welcome-area > ul {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    background: rgb(37,37,37);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .8) 10%, rgb(0, 0, 0, 0) 100%);
+}
+
+.welcome-area > ul > p {
+    position: relative;
+    float: left;
+    top: 20%;
+    transform: translateY(-20%);
+    margin: 0% 0% 0% 2%;
+    border-bottom: solid .1vw rgba(255, 255, 255, 1);
+    font-size: 1vw;
+}
+
+.welcome-area > ul > a {
+    position: relative;
+    float: right;
+    top: 20%;
+    right: 4%;
+    transform: translateY(-20%);
+    margin: 0% 1.5% 0% 0%;
+    padding: 0% .5%;
+    border-bottom: solid .15vw rgba(185, 185, 185, 0);
+    color: gray;
+    font-size: .7vw;
+    text-decoration: none;
+}
+
+.welcome-area > ul > a:hover {
+    border-bottom: solid .15vw rgb(185, 185, 185);
+    color: rgb(185, 185, 185);
+}
+
+.welcome-button {
+    margin: 2% 0% 0% 0%;
+    height: 2.2vw;
+    width: 15vw;
+    border: none;
+    outline: none;
+    border-radius: 1vw;
+    font-size: .9vw;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.welcome-button:active {
+    opacity: .8;
+}
+
+.info-area {
+    margin: -0.025% 0% 0% 0%;
+    padding: 1% 0%;
+    width: 100%;
+    background-color: black;
+}
+
+.info-area > h2 {
+    margin: 0% 0% 0% 2%;
+    width: 98%;
+    font-size: 1vw;
+}
+
+.info-area > p {
+    margin: 0% 0% 0% 2%;
+    width: 98%;
+    color: rgb(190, 190, 190);
+    font-size: .8vw;
+}
+
+.progress-area {
+    text-align: center;
+    padding: 1% 0%;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+}
+
+.progress-total {
+    display: inline-block;
+    padding: 1% 0%;
+    margin: 0% 0% 1% 0%;
+    width: 80%;
+    border-radius: .3vw;
+    background-color: rgb(49, 49, 49);
+}
+
+.progress-total > p {
+    text-align: center;
+    font-size: .9vw;
+}
+
+.progress {
+    display: inline-block;
+    padding: 1% 0%;
+    margin: 1% 4% 0% 1%;
+    height: auto;
+    width: 40%;
+    border-radius: .3vw;
+    background-color: rgb(49, 49, 49);
+}
+
+.progress > p {
+    text-align: center;
+    font-size: .9vw;
+}
+
+.progress > p > span {
+    color: var(--main-color);
+}
+
+.progress-total > p > span {
+    color: var(--main-color);
+}
+
+.progress-body {
+    position: relative;
+    display: inline-block;
+    margin: 1% 0% 0% 0%;
+    height: 1.2vw;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: .75vw;
+    background-color: rgba(16, 16, 16, 1);
+    overflow: hidden;
+}
+
+.progress-body-content {
+    position: absolute;
+    height: 100%;
+    border-radius: .75vw;
+    background: rgb(37,37,37);
+    background: linear-gradient(90deg, var(--main-color) 10%, var(--main-darkcolor) 100%);
+    overflow: hidden;
+}
+
+.footer-area {
+    text-align: center;
+    height: 3.5vw;
+    width: 100%;
+    background-color: black;
+}
+
+.footer-area > a {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0% 1.5%;
+    padding: 0% .5%;
+    border-bottom: solid .15vw rgba(185, 185, 185, 0);
+    color: gray;
+    font-size: .7vw;
+    text-decoration: none;
+}
+
+.footer-area > a:hover {
+    border-bottom: solid .15vw rgb(185, 185, 185);
+    color: rgb(185, 185, 185);
+}
