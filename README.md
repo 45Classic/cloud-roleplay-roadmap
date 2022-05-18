@@ -1,1 +1,1 @@
-# cloud-roleplay-roadmap
+Here you can see the latest version of the Cloud Roleplay roadmap. This website is only partially adapted to different resolutions, for the cell phone for example it is recognizable but clearly visible that this is not 100% adapted. The different progressbars can be easily adjusted, added or removed in the "app.js" file. The hyperlinks have been changed to those of my Github profile and the css file is completely editable.
